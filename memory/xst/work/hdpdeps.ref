@@ -1,0 +1,6 @@
+V3 3
+FL "D:/uni/arch lab projects/memory/RAM.vhd" 2021/04/02.15:34:14 P.20131013
+EN work/RAM 1617361460 FL "D:/uni/arch lab projects/memory/RAM.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/RAM/RTL 1617361461 \
+      FL "D:/uni/arch lab projects/memory/RAM.vhd" EN work/RAM 1617361460

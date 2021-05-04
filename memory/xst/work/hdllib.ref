@@ -1,0 +1,15 @@
+MO FIFO NULL FIFO.v vlg7C/_f_i_f_o.bin 1617906908
+MO write_pointer NULL write_pointer.v vlg27/write__pointer.bin 1617906908
+AR ram rtl "D:/uni/arch lab projects/memory/RAM.vhd" sub00/vhpl01 1617361461
+MO status_signal NULL status_signal.v vlg09/status__signal.bin 1617906908
+MO RAM_CG_MODULE NULL RAM_CG_MODULE.v vlg36/_r_a_m___c_g___m_o_d_u_l_e.bin 1617910037
+MO FIFO_CG NULL ipcore_dir/FIFO_CG.v vlg69/_f_i_f_o___c_g.bin 1617909781
+MO RAM_CG NULL ipcore_dir/RAM_CG.v vlg21/_r_a_m___c_g.bin 1617910298
+MO rammm_cg_module NULL rammm_cg_module.v vlg14/rammm__cg__module.bin 1617684931
+MO ram_cg_module NULL ram_cg_module.v vlg16/ram__cg__module.bin 1617801037
+MO RAM NULL RAM.v vlg14/_r_a_m.bin 1617800344
+MO read_pointer NULL read_pointer.v vlg3C/read__pointer.bin 1617906908
+EN ram NULL "D:/uni/arch lab projects/memory/RAM.vhd" sub00/vhpl00 1617361460
+MO memory_array NULL memory_array.v vlg57/memory__array.bin 1617906908
+MO FIFO_CG_MODULE NULL FIFO_CG_MODULE.v vlg5E/_f_i_f_o___c_g___m_o_d_u_l_e.bin 1617909781
+MO RAM_MODULE_CG NULL RAM_MODULE_CG.v vlg16/_r_a_m___m_o_d_u_l_e___c_g.bin 1617910298

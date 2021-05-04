@@ -1,0 +1,58 @@
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project2/ALU74181.xst" -ofn "D:/uni/arch lab projects/project2/ALU74181.syr" 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project2/ALU74181.xst" -ofn "D:/uni/arch lab projects/project2/ALU74181.syr" 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project2/ALU74181.xst" -ofn "D:/uni/arch lab projects/project2/ALU74181.syr" 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project2/ALU74181.xst" -ofn "D:/uni/arch lab projects/project2/ALU74181.syr" 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project2/ALU74181.xst" -ofn "D:/uni/arch lab projects/project2/ALU74181.syr" 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project2/ALU74181.xst" -ofn "D:/uni/arch lab projects/project2/ALU74181.syr" 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project2/ALU74181.xst" -ofn "D:/uni/arch lab projects/project2/ALU74181.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 "ALU74181.ngc" ALU74181.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o ALU74181_map.ncd ALU74181.ngd ALU74181.pcf 
+par -w -intstyle ise -ol high -t 1 ALU74181_map.ncd ALU74181.ncd ALU74181.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALU74181.twx ALU74181.ncd -o ALU74181.twr ALU74181.pcf 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project 2/ALU/ALU74181.xst" -ofn "D:/uni/arch lab projects/project 2/ALU/ALU74181.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 "ALU74181.ngc" ALU74181.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o ALU74181_map.ncd ALU74181.ngd ALU74181.pcf 
+par -w -intstyle ise -ol high -t 1 ALU74181_map.ncd ALU74181.ncd ALU74181.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALU74181.twx ALU74181.ncd -o ALU74181.twr ALU74181.pcf 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project 2/ALU/ALU74181.xst" -ofn "D:/uni/arch lab projects/project 2/ALU/ALU74181.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 "ALU74181.ngc" ALU74181.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o ALU74181_map.ncd ALU74181.ngd ALU74181.pcf 
+par -w -intstyle ise -ol high -t 1 ALU74181_map.ncd ALU74181.ncd ALU74181.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALU74181.twx ALU74181.ncd -o ALU74181.twr ALU74181.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 "ALU74181.ngc" ALU74181.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o ALU74181_map.ncd ALU74181.ngd ALU74181.pcf 
+par -w -intstyle ise -ol high -t 1 ALU74181_map.ncd ALU74181.ncd ALU74181.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALU74181.twx ALU74181.ncd -o ALU74181.twr ALU74181.pcf 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project 2/ALU/ALU74181.xst" -ofn "D:/uni/arch lab projects/project 2/ALU/ALU74181.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 "ALU74181.ngc" ALU74181.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o ALU74181_map.ncd ALU74181.ngd ALU74181.pcf 
+par -w -intstyle ise -ol high -t 1 ALU74181_map.ncd ALU74181.ncd ALU74181.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALU74181.twx ALU74181.ncd -o ALU74181.twr ALU74181.pcf 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project 2/ALU/ALU74181.xst" -ofn "D:/uni/arch lab projects/project 2/ALU/ALU74181.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 "ALU74181.ngc" ALU74181.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o ALU74181_map.ncd ALU74181.ngd ALU74181.pcf 
+par -w -intstyle ise -ol high -t 1 ALU74181_map.ncd ALU74181.ncd ALU74181.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALU74181.twx ALU74181.ncd -o ALU74181.twr ALU74181.pcf 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project 2/ALU/ALU74181.xst" -ofn "D:/uni/arch lab projects/project 2/ALU/ALU74181.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 "ALU74181.ngc" ALU74181.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o ALU74181_map.ncd ALU74181.ngd ALU74181.pcf 
+par -w -intstyle ise -ol high -t 1 ALU74181_map.ncd ALU74181.ncd ALU74181.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALU74181.twx ALU74181.ncd -o ALU74181.twr ALU74181.pcf 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project 2/ALU/ALU74181.xst" -ofn "D:/uni/arch lab projects/project 2/ALU/ALU74181.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 "ALU74181.ngc" ALU74181.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o ALU74181_map.ncd ALU74181.ngd ALU74181.pcf 
+par -w -intstyle ise -ol high -t 1 ALU74181_map.ncd ALU74181.ncd ALU74181.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALU74181.twx ALU74181.ncd -o ALU74181.twr ALU74181.pcf 
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project 2/ALU/ALU74181.xst" -ofn "D:/uni/arch lab projects/project 2/ALU/ALU74181.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 "ALU74181.ngc" ALU74181.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o ALU74181_map.ncd ALU74181.ngd ALU74181.pcf 
+par -w -intstyle ise -ol high -t 1 ALU74181_map.ncd ALU74181.ncd ALU74181.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALU74181.twx ALU74181.ncd -o ALU74181.twr ALU74181.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 "ALU74181.ngc" ALU74181.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o ALU74181_map.ncd ALU74181.ngd ALU74181.pcf 
+par -w -intstyle ise -ol high -t 1 ALU74181_map.ncd ALU74181.ncd ALU74181.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALU74181.twx ALU74181.ncd -o ALU74181.twr ALU74181.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 "ALU74181.ngc" ALU74181.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o ALU74181_map.ncd ALU74181.ngd ALU74181.pcf 
+par -w -intstyle ise -ol high -t 1 ALU74181_map.ncd ALU74181.ncd ALU74181.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALU74181.twx ALU74181.ncd -o ALU74181.twr ALU74181.pcf 

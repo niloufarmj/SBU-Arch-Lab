@@ -1,0 +1,94 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\DLLAB\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml rammm_cg_module.twx rammm_cg_module.ncd -o
+rammm_cg_module.twr rammm_cg_module.pcf
+
+Design file:              rammm_cg_module.ncd
+Physical constraint file: rammm_cg_module.pcf
+Device,package,speed:     xc3s100e,vq100,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clka
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+addra<0>    |    0.413(R)|    1.004(R)|clka_BUFGP        |   0.000|
+addra<1>    |    0.309(R)|    1.088(R)|clka_BUFGP        |   0.000|
+addra<2>    |    0.429(R)|    0.991(R)|clka_BUFGP        |   0.000|
+addra<3>    |    0.581(R)|    0.870(R)|clka_BUFGP        |   0.000|
+addra<4>    |    0.097(R)|    1.257(R)|clka_BUFGP        |   0.000|
+addra<5>    |    1.121(R)|    0.438(R)|clka_BUFGP        |   0.000|
+addra<6>    |    0.793(R)|    0.701(R)|clka_BUFGP        |   0.000|
+addra<7>    |    0.848(R)|    0.656(R)|clka_BUFGP        |   0.000|
+dina<0>     |    0.650(R)|    0.730(R)|clka_BUFGP        |   0.000|
+dina<1>     |    0.488(R)|    0.859(R)|clka_BUFGP        |   0.000|
+dina<2>     |    0.470(R)|    0.874(R)|clka_BUFGP        |   0.000|
+dina<3>     |    0.603(R)|    0.767(R)|clka_BUFGP        |   0.000|
+dina<4>     |    0.306(R)|    1.005(R)|clka_BUFGP        |   0.000|
+dina<5>     |    0.485(R)|    0.861(R)|clka_BUFGP        |   0.000|
+dina<6>     |    0.090(R)|    1.177(R)|clka_BUFGP        |   0.000|
+dina<7>     |    0.326(R)|    0.989(R)|clka_BUFGP        |   0.000|
+ena         |    0.718(R)|    0.639(R)|clka_BUFGP        |   0.000|
+wea<0>      |    2.189(R)|   -0.397(R)|clka_BUFGP        |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clka to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+douta<0>    |    9.592(R)|clka_BUFGP        |   0.000|
+douta<1>    |    8.768(R)|clka_BUFGP        |   0.000|
+douta<2>    |    8.998(R)|clka_BUFGP        |   0.000|
+douta<3>    |   10.087(R)|clka_BUFGP        |   0.000|
+douta<4>    |    9.929(R)|clka_BUFGP        |   0.000|
+douta<5>    |    9.782(R)|clka_BUFGP        |   0.000|
+douta<6>    |    9.490(R)|clka_BUFGP        |   0.000|
+douta<7>    |    9.950(R)|clka_BUFGP        |   0.000|
+------------+------------+------------------+--------+
+
+
+Analysis completed Tue Apr 06 09:25:52 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4486 MB
+
+
+

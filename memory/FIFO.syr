@@ -1,0 +1,482 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: FIFO.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FIFO.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FIFO"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-vq100
+
+---- Source Options
+Top Module Name                    : FIFO
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "write_pointer.v" in library work
+Compiling verilog file "status_signal.v" in library work
+Module <write_pointer> compiled
+Compiling verilog file "read_pointer.v" in library work
+Module <status_signal> compiled
+Compiling verilog file "memory_array.v" in library work
+Module <read_pointer> compiled
+Compiling verilog file "FIFO.v" in library work
+Module <memory_array> compiled
+Module <FIFO> compiled
+No errors in compilation
+Analysis of file <"FIFO.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <FIFO> in library <work>.
+
+Analyzing hierarchy for module <write_pointer> in library <work>.
+
+Analyzing hierarchy for module <read_pointer> in library <work>.
+
+Analyzing hierarchy for module <memory_array> in library <work>.
+
+Analyzing hierarchy for module <status_signal> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <FIFO>.
+Module <FIFO> is correct for synthesis.
+ 
+Analyzing module <write_pointer> in library <work>.
+Module <write_pointer> is correct for synthesis.
+ 
+Analyzing module <read_pointer> in library <work>.
+Module <read_pointer> is correct for synthesis.
+ 
+Analyzing module <memory_array> in library <work>.
+Module <memory_array> is correct for synthesis.
+ 
+Analyzing module <status_signal> in library <work>.
+Module <status_signal> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <write_pointer>.
+    Related source file is "write_pointer.v".
+    Found 9-bit up counter for signal <WR_PTR>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <write_pointer> synthesized.
+
+
+Synthesizing Unit <read_pointer>.
+    Related source file is "read_pointer.v".
+    Found 9-bit up counter for signal <RD_PTR>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <read_pointer> synthesized.
+
+
+Synthesizing Unit <memory_array>.
+    Related source file is "memory_array.v".
+    Found 256x8-bit dual-port RAM <Mram_temp_Dout> for signal <temp_Dout>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <memory_array> synthesized.
+
+
+Synthesizing Unit <status_signal>.
+    Related source file is "status_signal.v".
+    Found 1-bit xor2 for signal <CMP>.
+    Found 8-bit subtractor for signal <EQ_PTR$addsub0000> created at line 31.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <status_signal> synthesized.
+
+
+Synthesizing Unit <FIFO>.
+    Related source file is "FIFO.v".
+Unit <FIFO> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit dual-port RAM                               : 1
+# Adders/Subtractors                                   : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 2
+ 9-bit up counter                                      : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <memory_array>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_temp_Dout> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <WE>            | high     |
+    |     addrA          | connected to signal <WR_PTR>        |          |
+    |     diA            | connected to signal <Din>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     addrB          | connected to signal <RD_PTR>        |          |
+    |     doB            | connected to signal <Dout>          |          |
+    -----------------------------------------------------------------------
+Unit <memory_array> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit dual-port distributed RAM                   : 1
+# Adders/Subtractors                                   : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 2
+ 9-bit up counter                                      : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <FIFO> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FIFO, actual ratio is 7.
+FlipFlop rp/RD_PTR_4 has been replicated 1 time(s)
+FlipFlop rp/RD_PTR_5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : FIFO.ngr
+Top Level Output File Name         : FIFO
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 239
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 16
+#      LUT2                        : 24
+#      LUT2_D                      : 1
+#      LUT3                        : 66
+#      LUT4                        : 22
+#      MUXCY                       : 23
+#      MUXF5                       : 32
+#      MUXF6                       : 16
+#      MUXF7                       : 8
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 20
+#      FDCE                        : 20
+# RAMS                             : 128
+#      RAM16X1D                    : 128
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 11
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100evq100-5 
+
+ Number of Slices:                       70  out of    960     7%  
+ Number of Slice Flip Flops:             20  out of   1920     1%  
+ Number of 4 input LUTs:                388  out of   1920    20%  
+    Number used as logic:               132
+    Number used as RAMs:                256
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of     66    33%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 148   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RST_inv(RST_inv1_INV_0:O)          | NONE(rp/RD_PTR_0)      | 20    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.564ns (Maximum Frequency: 116.768MHz)
+   Minimum input arrival time before clock: 4.963ns
+   Maximum output required time after clock: 10.421ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 8.564ns (frequency: 116.768MHz)
+  Total number of paths / destination ports: 16733 / 1192
+-------------------------------------------------------------------------
+Delay:               8.564ns (Levels of Logic = 12)
+  Source:            rp/RD_PTR_0 (FF)
+  Destination:       ma/Mram_temp_Dout1 (RAM)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: rp/RD_PTR_0 to ma/Mram_temp_Dout1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q           130   0.514   1.251  rp/RD_PTR_0 (rp/RD_PTR_0)
+     LUT2:I0->O            1   0.612   0.000  ss/Msub_EQ_PTR_addsub0000_lut<0> (ss/Msub_EQ_PTR_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  ss/Msub_EQ_PTR_addsub0000_cy<0> (ss/Msub_EQ_PTR_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  ss/Msub_EQ_PTR_addsub0000_cy<1> (ss/Msub_EQ_PTR_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  ss/Msub_EQ_PTR_addsub0000_cy<2> (ss/Msub_EQ_PTR_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  ss/Msub_EQ_PTR_addsub0000_cy<3> (ss/Msub_EQ_PTR_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  ss/Msub_EQ_PTR_addsub0000_cy<4> (ss/Msub_EQ_PTR_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  ss/Msub_EQ_PTR_addsub0000_cy<5> (ss/Msub_EQ_PTR_addsub0000_cy<5>)
+     MUXCY:CI->O           0   0.051   0.000  ss/Msub_EQ_PTR_addsub0000_cy<6> (ss/Msub_EQ_PTR_addsub0000_cy<6>)
+     XORCY:CI->O           3   0.699   0.454  ss/Msub_EQ_PTR_addsub0000_xor<7> (ss/EQ_PTR_addsub0000<7>)
+     LUT4:I3->O            1   0.612   0.360  ss/EQ_PTR_and000026_SW0 (N22)
+     LUT4:I3->O           25   0.612   1.140  wp/WE1 (WE)
+     LUT2:I1->O            8   0.612   0.643  write_ctrl (write_ctrl)
+     RAM16X1D:WE               0.341          ma/Mram_temp_Dout1
+    ----------------------------------------
+    Total                      8.564ns (4.715ns logic, 3.849ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 276 / 276
+-------------------------------------------------------------------------
+Offset:              4.963ns (Levels of Logic = 3)
+  Source:            WR_EN (PAD)
+  Destination:       ma/Mram_temp_Dout1 (RAM)
+  Destination Clock: CLK rising
+
+  Data Path: WR_EN to ma/Mram_temp_Dout1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.509  WR_EN_IBUF (WR_EN_IBUF)
+     LUT4:I0->O           25   0.612   1.140  wp/WE1 (WE)
+     LUT2:I1->O            8   0.612   0.643  write_ctrl (write_ctrl)
+     RAM16X1D:WE               0.341          ma/Mram_temp_Dout1
+    ----------------------------------------
+    Total                      4.963ns (2.671ns logic, 2.292ns route)
+                                       (53.8% logic, 46.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 964 / 10
+-------------------------------------------------------------------------
+Offset:              10.421ns (Levels of Logic = 10)
+  Source:            rp/RD_PTR_0 (FF)
+  Destination:       Empty (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: rp/RD_PTR_0 to Empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q           130   0.514   1.251  rp/RD_PTR_0 (rp/RD_PTR_0)
+     LUT2:I0->O            1   0.612   0.000  ss/Msub_EQ_PTR_addsub0000_lut<0> (ss/Msub_EQ_PTR_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  ss/Msub_EQ_PTR_addsub0000_cy<0> (ss/Msub_EQ_PTR_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  ss/Msub_EQ_PTR_addsub0000_cy<1> (ss/Msub_EQ_PTR_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  ss/Msub_EQ_PTR_addsub0000_cy<2> (ss/Msub_EQ_PTR_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  ss/Msub_EQ_PTR_addsub0000_cy<3> (ss/Msub_EQ_PTR_addsub0000_cy<3>)
+     XORCY:CI->O           1   0.699   0.509  ss/Msub_EQ_PTR_addsub0000_xor<4> (ss/EQ_PTR_addsub0000<4>)
+     LUT2_D:I0->O          2   0.612   0.383  ss/EQ_PTR_and000025_SW0 (N01)
+     LUT4:I3->O            2   0.612   0.532  ss/EQ_PTR_and000026 (ss/EQ_PTR)
+     LUT3:I0->O            1   0.612   0.357  ss/Empty1 (Empty_OBUF)
+     OBUF:I->O                 3.169          Empty_OBUF (Empty)
+    ----------------------------------------
+    Total                     10.421ns (7.388ns logic, 3.032ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.23 secs
+ 
+--> 
+
+Total memory usage is 4514016 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

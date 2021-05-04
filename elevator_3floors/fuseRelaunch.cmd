@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/uni/arch lab projects/project 5/elevator/el_state_machine_tb_isim_beh.exe" -prj "D:/uni/arch lab projects/project 5/elevator/el_state_machine_tb_beh.prj" "work.el_state_machine_tb" "work.glbl" 

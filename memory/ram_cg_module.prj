@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/RAM_CG.v"
+verilog work "RAM_CG_MODULE.v"

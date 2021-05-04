@@ -1,0 +1,7 @@
+verilog isim_temp "write_pointer.v"
+verilog isim_temp "status_signal.v"
+verilog isim_temp "read_pointer.v"
+verilog isim_temp "memory_array.v"
+verilog isim_temp "FIFO.v"
+verilog isim_temp "FIFO_tb.v"
+verilog isim_temp "E:/DLLAB/14.7/ISE_DS/ISE//verilog/src/glbl.v"

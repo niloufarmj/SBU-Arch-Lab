@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/FIFO_CG.v"
+verilog work "FIFO_CG_MODULE.v"

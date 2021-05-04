@@ -1,0 +1,3 @@
+verilog work "cal_p_bit.v"
+verilog work "cal_g_bit.v"
+verilog work "cal_p_g.v"

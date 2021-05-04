@@ -1,0 +1,5 @@
+verilog work "write_pointer.v"
+verilog work "status_signal.v"
+verilog work "read_pointer.v"
+verilog work "memory_array.v"
+verilog work "FIFO.v"

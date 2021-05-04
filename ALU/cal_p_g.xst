@@ -1,0 +1,5 @@
+set -tmpdir "D:/uni/arch lab projects/project2/xst/projnav.tmp"
+set -xsthdpdir "D:/uni/arch lab projects/project2/xst"
+elaborate
+-ifn cal_p_g.prj
+-ifmt mixed

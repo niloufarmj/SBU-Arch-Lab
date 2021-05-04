@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+FIFO instance_name (
+    .Din(Din), 
+    .RST(RST), 
+    .RD_EN(RD_EN), 
+    .WR_EN(WR_EN), 
+    .CLK(CLK), 
+    .Empty(Empty), 
+    .Full(Full), 
+    .Dout(Dout)
+    );
+
+

@@ -1,0 +1,8 @@
+verilog work "cal_sigma_bit.v"
+verilog work "cal_p_bit.v"
+verilog work "cal_g_bit.v"
+verilog work "xor_all.v"
+verilog work "not_all.v"
+verilog work "cal_sigma.v"
+verilog work "cal_p_g.v"
+verilog work "ALU74181.v"

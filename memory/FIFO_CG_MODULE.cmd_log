@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/uni/arch lab projects/project 4/memory/FIFO_CG_MODULE.xst" -ofn "D:/uni/arch lab projects/project 4/memory/FIFO_CG_MODULE.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s100e-vq100-5 "FIFO_CG_MODULE.ngc" FIFO_CG_MODULE.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o FIFO_CG_MODULE_map.ncd FIFO_CG_MODULE.ngd FIFO_CG_MODULE.pcf 
+par -w -intstyle ise -ol high -t 1 FIFO_CG_MODULE_map.ncd FIFO_CG_MODULE.ncd FIFO_CG_MODULE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml FIFO_CG_MODULE.twx FIFO_CG_MODULE.ncd -o FIFO_CG_MODULE.twr FIFO_CG_MODULE.pcf 
